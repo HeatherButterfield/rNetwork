@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="rNetwork is a company that revolutionizes consumers's spending power by shifting the power and profits from big businesses to the individual. Join rNetwork, and start earning big and saving more today.">
+    <meta name="keywords" content="make money while spending, rewards program, financial freedom, networking, technology, purchasing power, payment app, movement, community, e-wallet, digital wallet, connection, money, joy, earn money">
+    <meta name="author" content="rNetwork">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://rnetwork.s3-us-west-1.amazonaws.com/css/a/imports.css">
+    <link href="https://rnetwork.s3-us-west-1.amazonaws.com/images/favicon-rnetwork.ico" rel="icon" type="x-icon" />
+  <title class="translate">Home | rNetwork</title>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/http-vue-loader"></script>
+</head>
+
+<body>
+  <div id="app">
+    <page-header></page-header>
+    <back-office-panel></back-office-panel>
+    <login-panel></login-panel>
+
+    <!--main-wrapper-->
+			<div id="main-wrapper">
+				<!--hero-->
+                <div id="hero-bg" class="block-hero-radius hero-bg-color relative box-shadow-2">
+                    <div class="text-block-hero font-light padding-sides box clear">
+                        <h1 class="translate">Earn Greater Income Today</h1>
+                        <p class="subhead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum nemo distinctio dolorem deserunt tempora, iure! Expedita inventore, odit, laudantium quam nobis, eveniet adipisci vel consectetur quae molestiae animi amet.</p>
+
+                        <!--cta-->
+                        <div class="cta-button translate"><a href="#">Join Now</a></div>
+                    </div>
+                </div>
+
+                <!--content block-->
+                <div id="vision-statement" class="box padding-all center-text">
+                    <h2 class="translate">Our Vision</h2>
+                    <p class="subhead translate">A revolutionary financial movement that is shifting the power and profits from big business to the individual. Through the power of the network we are able to leverage exclusive savings and drive greater income for all who wish to participate.</p>
+                </div>
+
+                <!--content block-->
+                <div class="padding-all flex-spacebetween flex-align-center block-resize">
+                    <!--img block-->
+                    <div id="content-bg-1" class="graphic-box fifty-split"></div>
+
+                    <!--content-->
+                    <div class="padding-sides block-border fifty-split box">
+                        <h2 class="translate">We believe great things come from building your network.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex velit debitis, soluta impedit unde a laborum amet sed officia similique modi rerum magnam quo quaerat quia. Ratione voluptatem dolorem commodi.</p>
+
+                        <!--cta-->
+                        <div class="cta-button translate"><a href="#">Learn More</a></div>
+                    </div>
+                </div>
+
+                <!--full bg content block-->
+                <div id="full-bg-1" class="block-full-bg relative">
+                    <!--content-->
+                    <div class="text-block-fullbg font-light padding-sides box">
+                        <h2 class="translate">One for all, and all for one—building a network that keeps you winning.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo ea magni distinctio labore obcaecati nesciunt, velit repellat beatae quo dolor reprehenderit quisquam rerum adipisci consequuntur! Omnis quia harum, tempore!</p>
+
+                        <!--cta-->
+                        <div class="cta-button translate"><a href="#">Learn More</a></div>
+                    </div>
+                </div>
+
+                <!--content block-->
+                <div class="padding-all flex-spacebetween flex-align-center block-resize">
+                    <!--img block-->
+                    <div id="content-bg-2" class="graphic-box fifty-split"></div>
+
+                    <!--content-->
+                    <div class="padding-sides block-border box fifty-split">
+                        <h2 class="translate">Increase your earnings—bring Your network to Our network</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tempore eaque, sed, beatae voluptatibus deleniti, sapiente eos quo consequatur ipsum labore illo vitae. Nihil sed quae fuga aut, nemo, quasi.</p>
+
+                        <!--cta-->
+                        <div class="cta-button translate"><a href="#">Learn More</a></div>
+                    </div>
+                </div>
+
+                <!--testimonials-->
+                <div class="block-testimonial testimonial-bg-color">
+                    <div class="padding-all box font-light center-text block-resize">
+                        <h2 class="translate">The Bigger We Get, The Better It Gets</h2>
+                        <h4 class="accent-color translate">A proven success formula.</h4>
+                        <p>&#8220;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed deleniti, quidem quis officiis minus autem aliquam sint magni accusantium saepe doloribus distinctio, est repellendus quae. Id, optio cumque voluptate. Nisi!&#8221;</p>
+                        <p class="translate"><em>Jane Doe, president</em></p>
+                    </div>
+                </div>
+			</div>
+
+      <!--translate-->
+      <div>
+          <div @click="translate('en', currentLanguage)">English</div>
+          <div @click="translate('it', currentLanguage)">Italian</div>
+          <div @click="translate('es', currentLanguage)">Spanish</div>
+          <div @click="translate('de', currentLanguage)">German</div>
+      </div>
+
+    <page-footer></page-footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    new window.Vue({
+      el: '#app',
+      components: {
+        'page-header': window.httpVueLoader('../../components/Header.vue'),
+        'page-footer': window.httpVueLoader('../../components/Footer.vue'),
+        'login-panel': window.httpVueLoader('../../components/LoginPanel.vue'),
+        'back-office-panel': window.httpVueLoader('../../components/BackOfficePanel.vue')
+      },
+      data: function () {
+        return {
+          currentLanguage: 'es',
+          translation: []
+        }
+      },
+      methods: {
+        getTranslations(target) {
+          let toBeTranslated = '';
+          document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, a, button, span, div').forEach((item, i) => {
+            toBeTranslated += item.textContent + '~';
+          });
+
+          var settings = {
+          	"async": true,
+          	"crossDomain": true,
+          	"url": "https://google-translate1.p.rapidapi.com/language/translate/v2",
+          	"method": "POST",
+          	"headers": {
+          		"x-rapidapi-host": "google-translate1.p.rapidapi.com",
+          		"x-rapidapi-key": "97a621d563msh086acdf5f8c2825p130acbjsn9b527c1f9c37",
+          		"content-type": "application/x-www-form-urlencoded"
+          	},
+          	"data": {
+          		"source": "en",
+          		"q": toBeTranslated,
+          		"target": target
+          	},
+          }
+
+          $.ajax(settings).done(function (response) {
+            let translatedTextString = response.data.translations[0].translatedText;
+            let translatedTextArray = translatedTextString.split(' ~ ');
+            translatedTextArray[translatedTextArray.length-1] = translatedTextArray[translatedTextArray.length-1].replace(' ~', '');
+            console.log(JSON.stringify(translatedTextArray));
+          });
+        },
+        printEnglish() {
+          let toBeTranslatedArray = [];
+          document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, a, button, span, div').forEach((item, i) => {
+            toBeTranslatedArray.push(item.textContent);
+          });
+          console.log(JSON.stringify(toBeTranslatedArray));
+        }
+      },
+      mounted() {
+        let vm = this;
+        //this.printEnglish();
+        //this.getTranslations('es');
+        $.getJSON( "../../json/translations.json", function(data) {
+          document.querySelectorAll('[data-translate="true"]').forEach(function(item, index) {
+            item.textContent = data[vm.currentLanguage][index];
+          });
+        });
+      }
+    })
+  </script>
+</body>
+</html>

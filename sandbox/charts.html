@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div id="container" style="width: 75%;">
+		    <canvas id="canvas"></canvas>
+	  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script>
+  		var lineChartData = {
+  			labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+  			datasets: [{
+  				label: '2020',
+          fill: false,
+  				backgroundColor: "#15A2C8",
+          borderColor: "#15A2C8",
+  				data: [
+  					10,
+            20,
+            30,
+            40,
+            50,
+            40,
+            30
+  				]
+  			},
+        {
+  				label: '2019',
+          fill: false,
+  				backgroundColor: "pink",
+          borderColor: "pink",
+  				data: [
+  					20,
+            10,
+            30,
+            60,
+            20,
+            35,
+            40
+  				]
+  			},
+      ]};
+
+		window.onload = function() {
+			var ctx = document.getElementById('canvas').getContext('2d');
+			let barChart = new Chart(ctx, {
+				type: 'line',
+				data: lineChartData,
+				options: {
+					responsive: true,
+          scales: {
+              xAxes: [{
+                  gridLines: {
+                      display: false,
+                  }
+              }],
+              yAxes: [{
+                  gridLines: {
+                      display: false,
+                  }
+              }]
+          },
+					legend: {
+						display: true,
+					},
+					title: {
+						display: true,
+						text: 'Commissions'
+					}
+				}
+			});
+
+		};
+
+	</script>
+  </body>
+</html>

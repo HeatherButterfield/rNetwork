@@ -1,0 +1,26 @@
+<div id="app">
+  <page-header></page-header>
+  <back-office-panel></back-office-panel>
+  <login-panel></login-panel>
+
+  <shop-menu></shop-menu>
+
+      <!--shop cards-->
+      <div class="padding-sides relative shop-cards-wrapper">
+        <!--shop card category - apparel-->
+        <div class="shop-section flex-start">
+
+          <shop-card v-for="card in cards" :key="card" :link="card.link" :img="card.img" :alt="card.alt" :caption="card.caption" :tcr="card.tcr"></shop-card>
+
+          <!--section title - CAN-->
+          <h4 class="full-width relative"><span data-translate="true">Country Exclusive</span><span class="shop-more hidden"><a href="#" data-translate="true">See more</a></span></h4>
+
+          <shop-card v-for="card in country" :key="card" :link="card.link" :img="card.img" :alt="card.alt" :caption="card.caption" :tcr="card.tcr"></shop-card>
+
+          <!--disclaimer-->
+          <div id="shop-note" class="full-width"><strong data-translate="true">Note:</strong><span data-translate="true"> Commission rates and percentages (TCR) are based on most recent information available, and are subject to change. Some items in specific stores may not be commissionable or may pay higher than listed commission rates. Every effort has been made to provide accurate and timely information.</span></div>
+        </div>
+      </div>
+
+  <page-footer></page-footer>
+</div>

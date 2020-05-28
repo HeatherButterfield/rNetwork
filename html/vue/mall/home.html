@@ -1,0 +1,38 @@
+<div id="app">
+  <page-header></page-header>
+  <back-office-panel></back-office-panel>
+  <login-panel></login-panel>
+
+  <!---main--->
+  <!---------------------------------------------------------------------------------------------->
+  <main class="site-content">
+
+  	<!--main wrapper-->
+  	<div id="main-wrapper">
+  		<!--title-->
+  		<div id="shop-title" class="padding-sides clear-top-margin">
+  			<h1>rGlobal Mall</h1>
+  			<p class="subhead accent-color">Welcome to <strong>Home & Garden</strong></p>
+  		</div>
+
+  		<shop-menu></shop-menu>
+
+  		<!--shop cards-->
+  		<div class="padding-sides relative shop-cards-wrapper">
+  			<!--shop card category - home & garden-->
+  			<div class="shop-section flex-start">
+
+          <shop-card v-for="card in cards" :key="card" :link="card.link" :img="card.img" :alt="card.alt" :caption="card.caption" :tcr="card.tcr"></shop-card>
+
+  				<!--country exclusive section----------------------------------------------------------------------------------------------------------------------------------------------->
+
+  				<!--disclaimer-->
+  				<div id="shop-note" class="full-width"><strong>Note:</strong> Commission rates and percentages (TCR) are based on most recent information available, and are subject to change. Some items in specific stores may not be commissionable or may pay higher than listed commission rates. Every effort has been made to provide accurate and timely information.</div>
+  			</div>
+  		</div>
+  	</div>
+  	<!---------------------------------------------------------------------------------------------->
+  </main>
+
+  <page-footer></page-footer>
+</div>

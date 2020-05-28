@@ -1,0 +1,99 @@
+<div id="app">
+	<page-header></page-header>
+	<back-office-panel></back-office-panel>
+	<login-panel></login-panel>
+
+	<!---main--->
+<!---------------------------------------------------------------------------------------------->
+<main class="site-content">
+<!--main wrapper-->
+<div id="main-wrapper">
+	<!--slide container-->
+	<ul class="rslides">
+		<!--side 1-->
+		<li>
+			<div id="shop-slide-1" class="slide">
+				<div class="slide-textbox font-light">
+					<h2 data-translate="true">The More You Shop, The More You Earn</h2>
+				</div>
+			</div>
+		</li>
+
+		<!--side 2-->
+		<li>
+			<div id="shop-slide-2" class="slide">
+				<div class="slide-textbox font-light">
+					<h2 data-translate="true">Shop Globally</h2>
+					<p class="subhead" data-translate="true">North America, Latin America, Europe, India, and more.</p>
+				</div>
+			</div>
+		</li>
+
+		<!--side 3-->
+		<li>
+			<div id="shop-slide-3" class="slide">
+				<div class="slide-textbox font-light">
+					<h2 data-translate="true">Save Up to 50% on Select Brands Today</h2>
+				</div>
+			</div>
+		</li>
+
+		<!--side 4-->
+		<li>
+			<div id="shop-slide-4" class="slide">
+				<div class="slide-textbox font-light">
+					<h2 data-translate="true">Welcome to rGlobal Mall</h2>
+					<p data-translate="true" class="subhead">Start shopping today.</p>
+				</div>
+			</div>
+		</li>
+	</ul>
+
+	<!--shop info-->
+	<div id="shop-info-wrapper" class="padding-sides box relative">
+		<!--info box trigger (for desktop)-->
+		<div data-translate="true" id="shop-info-link"><a class="video" video-url="https://vimeo.com/398043342/c1fbe8ec64">Why shop here?</a></div>
+
+		<!--info box (hidden by default until triggered) zindex 70-->
+		<div id="shop-info-box" class="box box-shadow">
+			<!--close button-->
+			<div class="login-panel-close"><a href="#"><img src="https://rnetwork.imfast.io/production/images/close-panel-rnetwork.png" alt="close panel - rNetwork" /></a></div>
+
+			<h2></h2>
+			<p></p>
+		</div>
+
+		<!--shop overlay-->
+		<div id="shop-info-overlay"></div>
+	</div>
+
+	<!--title-->
+	<div id="shop-title" class="padding-sides">
+		<h1 data-translate="true">Welcome to rGlobal Mall</h1>
+		<p data-translate="true" class="subhead">Earn exclusive cash back and commissions when you shop with our retail partners through rGlobal Mall. Best of all, this is in addition to any on-site deals and discounts! The bigger we get, the better it gets!</p>
+	</div>
+
+	<shop-menu></shop-menu>
+
+	<!--shop cards-->
+	<div class="padding-sides relative shop-cards-wrapper">
+		<!--shop card category - featured brands-->
+		<div class="shop-section flex-start">
+			<!--section title-->
+			<h4 class="full-width relative"><span data-translate="true">Featured Brands</span><span class="shop-more hidden"><a href="#" data-translate="true">See all</a></span></h4>
+
+			<!--FEATURED section----------------------------------------------------------------------------------------------------------------------------------------------->
+
+			<!--shop cards - area trend-->
+			<shop-card v-for="card in cards" :key="card" :link="card.link" :img="card.img" :alt="card.alt" :caption="card.caption" :tcr="card.tcr"></shop-card>
+
+			<!--disclaimer-->
+			<div id="shop-note" class="full-width"><strong data-translate="true">Note:</strong> <span data-translate="true"> Commission rates and percentages (TCR) are based on most recent information available, and are subject to change. Some items in specific stores may not be commissionable or may pay higher than listed commission rates. Every effort has been made to provide accurate and timely information.</span></div>
+		</div>
+	</div>
+</div>
+<!---------------------------------------------------------------------------------------------->
+</main>
+
+	<page-footer></page-footer>
+</div>

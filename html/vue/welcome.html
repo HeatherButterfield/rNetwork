@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="rNetwork is a company that revolutionizes consumers's spending power by shifting the power and profits from big businesses to the individual. Join rNetwork, and start earning big and saving more today.">
+    <meta name="keywords" content="make money while spending, rewards program, financial freedom, networking, technology, purchasing power, payment app, movement, community, e-wallet, digital wallet, connection, money, joy, earn money">
+    <meta name="author" content="rNetwork">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://rnetwork.s3-us-west-1.amazonaws.com/css/a/imports.css">
+    <link href="https://rnetwork.s3-us-west-1.amazonaws.com/images/favicon-rnetwork.ico" rel="icon" type="x-icon" />
+  <title>Home | rNetwork</title>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/http-vue-loader"></script>
+</head>
+
+<body>
+  <div id="app">
+    <page-header></page-header>
+    <back-office-panel></back-office-panel>
+    <login-panel></login-panel>
+
+    <!---main--->
+		<!---------------------------------------------------------------------------------------------->
+		<main>
+			<!--main-wrapper-->
+			<div id="splash-wrapper" class="flex-center">
+				<!--forms-->
+                <div class="relative box font-light onboarding-block-3 slide-in-top padding-all clear-top-margin">
+                    <h1>Welcome to rNetwork</h1>
+					<!--for replicated site, the dynamic greeting segment appears. See below:-->
+					<p class="subhead"><!--Hi this is {0}.--> To customize your experience, please select your country of residence.</p>
+
+
+                    <!--form-->
+                    <form class="box" action="/home">
+						<!--form fileds-->
+						<div class="flex-spacebetween form-column-2">
+							<div class="form-group">
+								<label>Select a Country</label>
+                                <select id="countries" required>
+									<option value=""></option>
+									<option value="United States">United States</option>
+									<option value="India">India</option>
+								</select>
+                            </div>
+						</div>
+
+                        <!--submit-->
+                        <button type="submit" class="submit-button">Proceed</button>
+                    </form>
+                </div>
+			</div>
+			<!---------------------------------------------------------------------------------------------->
+		</main>
+
+    <page-footer></page-footer>
+  </div>
+
+  <script src="../../js/home.js"></script>
+</body>
+</html>

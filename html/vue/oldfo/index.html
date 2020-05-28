@@ -1,0 +1,56 @@
+<div id="app">
+
+  <old-header></old-header>
+
+  <!--main-container-->
+  <!---------------------------------------------------------------------->
+  <main class="site-content">
+      <!--hero-->
+      <div id="hero-bg" class="hero overlay-dark">
+          <div class="title color-white">
+              <h1 data-translate="true">Our Vision</h1>
+              <span data-translate="true" class="post-title">A revolutionary financial movement that is shifting the power and profits from big business to the individual.  Through the power of the network we are able to leverage exclusive savings and drive greater income for all who wish to participate.</span>
+
+              <!--button-->
+              <div v-if="getCookie('_Alias')" class="button center-button"><a href="/r/onboarding/routes">Join Now</a></div>
+              <div v-if="!getCookie('_Alias')" class="button center-button"><a href="/r/requirement">Join Now</a></div>
+          </div>
+
+          <!--next-->
+          <a class="scroll-to-hash" href="#welcome"><i class="fas fa-chevron-down next heartbeat"></i></a>
+      </div>
+
+      <!--welcome-->
+      <div id="welcome" class="welcome-wrapper hero overlay-dark">
+          <div class="welcome-title box">
+              <h2 data-translate="true">The Power Is In The Network!</h2>
+              <p><span data-translate="true">Welcome to </span><span class="company-name"></span>, a place where the power is shifted back to the individual, where money traditionally captured by big businesses and banks is now being enjoyed by members just like YOU.</p>
+          </div>
+      </div>
+
+      <!--video promo-->
+      <div id="video-bg" class="video-wrapper hero">
+          <!--video-->
+          <div class="media-video">
+              <h2 data-translate="true" class="center-text">Discover Your Earning Potential</h2>
+
+              <!--video placeholder-->
+              <div class="youtube-link">
+                  <a class="video" video-url="https://vimeo.com/374229123/934d8a7cfd"><img src="https://rnetworkwebimages.s3-us-west-1.amazonaws.com/opp_video.jpg" alt="opportunity video"></a>
+              </div>
+
+              <!--buttons-->
+              <div class="twobutton_wrapper flex-center box">
+                  <div v-if="getCookie('_Alias')" class="button center-button"><a href="/r/onboarding/routes">Join Now</a></div>
+                  <div v-if="!getCookie('_Alias')" class="button center-button"><a href="/r/requirement">Join Now</a></div>
+                  <div v-if="getCookie('_Alias') && getCookie('_CountryID') != 'IN'" class="button center-button"><a href="/r/opportunity">Learn More</a></div>
+                  <div v-if="getCookie('_Alias') && getCookie('_CountryID') === 'IN'" class="button center-button"><a href="/r/in/opportunity">Learn More</a></div>
+              </div>
+          </div>
+      </div>
+  </main>
+  <!---------------------------------------------------------------------->
+
+  <old-footer></old-footer>
+
+</div>
