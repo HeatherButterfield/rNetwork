@@ -1,0 +1,46 @@
+<div id="app">
+  <page-header></page-header>
+
+  <!---main--->
+		<!---------------------------------------------------------------------------------------------->
+		<main class="site-content">
+
+			<!--main-wrapper-->
+			<div id="main-wrapper" class="clear-top-margin">
+				<!--account details wrapper-->
+				<div id="account-message-block" class="account-block padding-all box">
+					<h1>Message Center</h1>
+					<p>You have <span class="unread-message">{{unreadMessageCount}} unread</span> messages.</p>
+
+					<!--message filters-->
+					<div id="account-filter" class="flex-start">
+						<a href="/r/bo/account/messages/unread?skip=0&take=10">Unread Messages</a>
+						<a class="active" href="/r/bo/account/messages/all?skip=0&take=10">All Messages</a>
+					</div>
+
+					<!--message body-->
+					<div id="account-message-wrapper">
+						<div v-for="message in messages" :key="message.subject" class="account-message">
+              <a class="message-sum box" :class="message.readDate != null ? 'message-read' : ''" :href="'/r/message?id=' + message.id + '&skip=' + skip + '&take=' + take + '&status=all'">
+								<p v-if="message.receiptDate">{{message.receiptDate.split('T')[0].split('-')[1]}}/{{message.receiptDate.split('T')[0].split('-')[2]}}/{{message.receiptDate.split('T')[0].split('-')[0]}}</p>
+								<h4>{{message.subject}}</h4>
+							</a>
+						</div>
+					</div>
+
+					<!--return-->
+                    <p class="account-return link-underscore-blue right-text"><a href="/account">Return to dashboard &#62;</a></p>
+
+                    <!--account pagination-->
+                    <div v-if="messageCount > 10" class="account-cards-pagination flex-start">
+        							<a v-if="skip >= 1" :href="'/r/bo/account/messages/all?skip=0&take=10'">&laquo;</a>
+                      <a v-for="num in Math.ceil(messageCount/10)" :key="num" :class="(skip/take) === (num-1) ? 'status-active' : ''" :href="'/r/bo/account/messages/all?skip=' + ((num-1)*take) + '&take=10'">{{num}}</a>
+        							<a v-if="((skip/10)+1) != Math.ceil(messageCount/10)" :href="'/r/bo/account/messages/all?&skip=' + ((Math.ceil(messageCount/10)-1)*take) + '&take=10'">&raquo;</a>
+        						</div>
+				</div>
+			</div>
+			<!---------------------------------------------------------------------------------------------->
+		</main>
+
+  <page-footer></page-footer>
+</div>

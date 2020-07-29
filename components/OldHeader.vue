@@ -7,8 +7,8 @@
             <!--logo-->
             <div id="logo">
                 <a href="/"><img src="https://rnetworkwebimages.s3-us-west-1.amazonaws.com/logo_rnetwork_1.png" alt="r network logo" /></a>
-                <a v-if="getCookie('_CountryID')" href="/country/select"><span class="country-flag">{{getCookie('_CountryID')}}</span></a>
-                <a v-if="!getCookie('_CountryID')" href="/country/select"><span class="country-flag">US</span></a>
+                <a v-if="getCookie('_CountryID')" href="/country/select"><span class="country-flag" :class="getCookie('_CountryID')">{{getCookie('_CountryID')}}</span></a>
+                <a v-if="!getCookie('_CountryID')" href="/country/select"><span class="country-flag US">US</span></a>
             </div>
 
             <!--top nav-->

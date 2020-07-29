@@ -1,9 +1,12 @@
 new window.Vue({
   el: '#app',
   components: {
-    'old-header': window.httpVueLoader('https://rnetwork.imfast.io/production/components/OldHeader.vue'),
-    'old-footer': window.httpVueLoader('https://rnetwork.imfast.io/production/components/OldFooter.vue'),
+    'old-header': window.httpVueLoader('https://rnetwork.imfast.io/' + data.cloudDirectory + '/components/OldHeader.vue'),
+    'old-footer': window.httpVueLoader('https://rnetwork.imfast.io/' + data.cloudDirectory + '/components/OldFooter.vue'),
   },
+  data: () => ({
+    data: data,
+  }),
   methods: {
     setCookie(name, value, days) {
         var expires = "";
@@ -32,8 +35,8 @@ new window.Vue({
     if (!this.getCookie('_Alias')) {
       window.location.replace("/r/requirement");
     }
-    if (this.getCookie('_CountryID') === 'IN') {
-      window.location.replace("/onboarding?route=Fann");
-    }
+    // if (this.getCookie('_CountryID') === 'IN') {
+    //   window.location.replace("/onboarding?route=Fann");
+    // }
   }
 })

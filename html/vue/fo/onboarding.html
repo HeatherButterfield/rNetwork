@@ -1,0 +1,9 @@
+<div id="app">
+  <page-header></page-header>
+
+  <onboarding-page-india v-if="getCookie('_CountryID') === 'IN'"></onboarding-page-india>
+  <onboarding-page v-else></onboarding-page>
+
+  <india-footer v-if="getCookie('_CountryID') === 'IN'"></india-footer>
+  <page-footer v-else></page-footer>
+</div>

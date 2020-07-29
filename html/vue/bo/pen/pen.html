@@ -1,0 +1,89 @@
+<div id="app">
+  <page-header></page-header>
+<!---main--->
+		<!---------------------------------------------------------------------------------------------->
+		<main class="site-content">
+			<!--main-wrapper-->
+			<div id="main-wrapper" class="clear-top-margin">
+				<!--account details wrapper-->
+				<div class="account-block padding-all box">
+					<h1>Personally-Enrolled Network</h1>
+					<p class="subhead">Charter Members</p>
+
+					<!--search box-->
+					<div class="account-search">
+						<div class="box form">
+							<div class="form-group flex-spacebetween">
+								<input type="text" placeholder="Search by ID, first name, or last name." v-model="filter">
+
+								<!--submit-->
+								<button type="button" title="Search" class="submit-button" v-on:click="getPenFilter"></button>
+							</div>
+						</div>
+					</div>
+
+					<!--owner info (adding the not-you class will reveal the back-to-you link)-->
+					<div class="not-you account-owner-wrapper flex-spacebetween-reverse flex-align-center">
+						<!--owner summary-->
+						<div class="account-owner-summary one-fourth-split">
+							<!--name-->
+							<section>
+								<p></p>
+								<p class="name">{{user.firstName}} {{user.lastName}}</p>
+								<p v-if="user.signUpDate" class="start-date">{{user.type}} since {{user.signUpDate.split('T')[0].split('-')[1]}}/{{user.signUpDate.split('T')[0].split('-')[2]}}/{{user.signUpDate.split('T')[0].split('-')[0]}}</p>
+							</section>
+
+							<!--status-->
+							<p class="status" :class="user.status === 'Active' ? 'status-active' : 'status-inactive'">{{user.status}}</p>
+
+							<!--back to you - only shows when other CM PEN is selected-->
+							<p class="account-return link-underscore-blue" v-if="data.appUser.id != user.id"><a :href="'/r/bo/account/pen?token=' + data.appUserToken + '&skip=0&take=10'">&larr; Back to you</a></p>
+						</div>
+
+						<!--owner statuses-->
+						<div class="account-owner-status flex-start three-fourth-split">
+							<!--t3 status-->
+							<div class="status relative" :class="user.activePaidEnrolleeCount >= 3 ? 'status-active' : 'status-inactive'">
+								Power3
+							</div>
+
+							<!--power3 status-->
+							<!--<div class="status relative">
+								Power3 Status
+
+								<div id="p3-alert" class="alert-box">
+									You have <strong>6 days</strong> to secure Power3 Status
+								</div>
+							</div>-->
+						</div>
+					</div>
+
+					<!--pen cards-->
+					<div id="account-pen-wrapper" class="account-cards-block slide-in-bottom-2">
+						<!--switch type link-->
+						<p class="account-return right-text link-underscore-blue"><a :href="'/r/bo/account/penfann?token=' + data.appUserToken + '&skip=0&take=10'">See FANNs</a></p>
+
+						<!--cards-->
+						<ol class="flex-start dont-break-out link-underscore-blue">
+							<!--card-->
+							<pen-card v-for="p in pen" :key="p.id" :token="p.token" :id="p.id" :fname="p.firstName" :lname="p.lastName" :status="p.status" :type="p.type" :tier="p.tier" :email="p.email" :phone="p.phoneNumber" :country="p.country"></pen-card>
+
+						</ol>
+
+						<!--return-->
+						<p class="account-return link-underscore-blue right-text"><a href="/account">Return to dashboard &#62;</a></p>
+
+						<!--account pagination-->
+						<div v-if="penCount > 10 && !filter" class="account-cards-pagination flex-start">
+							<a v-if="skip >= 1" :href="'/r/bo/account/pen?token=' + token + '&skip=0&take=10'">&laquo;</a>
+              <a v-for="num in Math.ceil(penCount/10)" :key="num" :class="skip === (num-1) ? 'status-active' : ''" :href="'/r/bo/account/pen?skip=' + (num-1) + '&take=10&token=' + token">{{num}}</a>
+							<a v-if="(skip+1) != Math.ceil(penCount/10)" :href="'/r/bo/account/pen?token=' + token + '&skip=' + (Math.ceil(penCount/10)-1) + '&take=10'">&raquo;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---------------------------------------------------------------------------------------------->
+		</main>
+    <page-footer></page-footer>
+
+    </div>

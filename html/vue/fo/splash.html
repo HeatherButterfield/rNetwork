@@ -1,0 +1,42 @@
+<div id="app">
+
+  <!---header--->
+	<!---------------------------------------------------------------------------------------------->
+	<header class="flex-align-center box">
+		<!--logo-->
+		<div class="logo"><a href="/r/home"><img src="https://rnetwork.imfast.io/production/images/logo_rnetwork.png" alt="rNetwork logo"/></a></div>
+	</header>
+
+  <!---main--->
+	<!---------------------------------------------------------------------------------------------->
+	<main>
+		<!--main-wrapper-->
+		<div id="splash-wrapper" class="flex-center overlay-dark">
+			<!--forms-->
+              <div class="relative box font-light onboarding-block-3 slide-in-top padding-all clear-top-margin">
+                  <h1>Welcome to rNetwork</h1>
+				<!--for replicated site, the dynamic greeting segment appears. See below:-->
+				<p class="subhead"><!--Hi this is {0}.--> To customize your experience, please select your country of residence.</p>
+
+
+                  <!--form-->
+                  <form class="box" action="/country/select" method="post">
+					<!--form fileds-->
+					<div class="flex-spacebetween form-column-2">
+						<div class="form-group">
+							<label>Select a Country</label>
+                <select id="CountryID" name="CountryID" required>
+								<option v-for="country in countries" :key="country.isO2" :value="country.isO2" :selected="country.isO2 == 'US'">{{country.name}}</option>
+							</select>
+                          </div>
+					</div>
+
+                      <!--submit-->
+                      <button type="submit" class="submit-button">Proceed</button>
+                  </form>
+              </div>
+		</div>
+		<!---------------------------------------------------------------------------------------------->
+	</main>
+
+</div>

@@ -1,0 +1,126 @@
+<div id="app">
+  <page-header></page-header>
+
+  <!---main--->
+		<!---------------------------------------------------------------------------------------------->
+		<!--main-wrapper-->
+		<main class="site-content">
+			<div id="main-wrapper" class="clear-top-margin">
+				<!--account details wrapper-->
+                <div class="account-block padding-all box">
+                    <h1>Disable Pay with Commission</h1>
+                    <p>Confirm or enter your payment information below to proceed.</p>
+
+                    <p class="box-border-light box">By disabling Pay with Commission, you agree to to pay your monthly subscription by using your existing payment method on file, or a new payment method.</p>
+
+                    <div class="account-loader fade-in">
+                    		<div class="account-loader-icon-box">
+                                     <div class="account-loader-icon rotate-center"></div>
+                                      <p>Processing&#8230;</p>
+                    		</div>
+                    </div>
+
+                    <!--form-->
+                    <form class="box">
+                      <!--error message-->
+                      <div v-if="modelState['error'] != undefined" class="box-highlight box relative">
+                          <h4>Error</h4>
+                          <p>{{ modelState.error }}</p>
+                      </div>
+                        <div id="account-selectpayment" class="form-column-2 flex-spacebetween flex-align-center">
+                            <div class="form-group">
+                                <label>Select Payment Method</label>
+                                <select required v-model="enterPayment" v-on:change="configure">
+                                    <option v-if="data.other.appUserCCs" value="existing">Use payment record on file.</option>
+                                    <option selected value="new">Enter new payment method</option>
+                                </select>
+                            </div>
+
+                            <div v-if="data.other.appUserCCs" class="fifty-split box account-segment box">
+                                <h4>Payment Record on File</h4>
+                                <ul>
+                                    <!--card number-->
+                                    <li>
+                                        <span class="account-label">Card Number</span>
+                                        {{data.other.appUserCCs[0].number}}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--payment method (will only reveal when user selects "enter new payment" otherwise hide)-->
+                        <div id="account-newpayment-wrapper" v-if="enterPayment === 'new'">
+                            <!--new payment method-->
+                            <div class="form-column-2 flex-spacebetween">
+                                <h2 class="full-width accent-color">Enter New Payment Method</h2>
+
+                                <!--error message-->
+                                <div v-if="modelState['error'] != undefined" class="box-highlight box relative">
+                  									<h4>Error</h4>
+                                    <p>{{ modelState.error }}</p>
+                                </div>
+
+                                <!--name on card-->
+                                <div class="form-group">
+                                    <label>First Name</label>
+                                    <input type="text" id="fname" name="fname" v-model="fname" required>
+                                    <div class="required-temp box" v-if="modelState['FirstName'] !== undefined">{{ modelState.FirstName }}</div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    <input type="text" id="lname" name="lname" v-model="lname" required>
+                                    <div class="required-temp box" v-if="modelState['LastName'] !== undefined">{{ modelState.LastName }}</div>
+                                </div>
+
+                              <!--card number-->
+                              <div class="form-group">
+                                  <label>Card Number</label>
+                                  <div class="payment-field input-text" id="ccnumber"></div>
+                                  <div class="required-temp box" v-if="modelState['Number'] !== undefined">{{ modelState.Number }}</div>
+                              </div>
+                                <!--exp-->
+                                <div class="form-group">
+                                    <label>Expiration Date</label>
+                                    <div class="payment-field input-text" id="ccexp"></div>
+                                    <div class="required-temp box" v-if="modelState['Expiration'] !== undefined">{{ modelState.Expiration }}</div>
+                                </div>
+
+                                <!--security code-->
+                                <div class="form-group">
+                                    <label>Security Code</label>
+                                    <div class="payment-field input-text" id="cvv"></div>
+                                </div>
+
+                                <!--postal code-->
+                                <div class="form-group">
+                                    <label>Postal Code</label>
+                                    <input type="number" id="zip" name="zip" v-model="zip" required>
+                                    <div class="required-temp box" v-if="modelState['PostalCode'] !== undefined">{{ modelState.PostalCode }}</div>
+                                </div>
+                            </div>
+
+                            <!--user agreement-->
+                            <div class="form-group">
+                                <label class="checkbox" required>
+                                    <p>I agree to have the card information above stored in my records. This new payment method will be used to pay my monthly subscription should my commission balance fall short of the monthly membership fee.</p>
+                                    <input v-on:click="checked = !checked" type="checkbox" value="Agree">
+                                    <span class="checkmark"></span>
+                                    <div class="required-temp box" v-if="checkboxError">Required</div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!--submit-->
+                        <button v-if="enterPayment === 'new'" type="button" class="submit-button" id="new" v-on:click="handleSubmit">Disable</button>
+                        <button v-if="enterPayment === 'existing'" type="button" class="submit-button" id="existing" v-on:click="submitExisting">Disable</button>
+
+                        <!--reroute link back to details-->
+                        <p class="account-return link-underscore-blue"><a href="/r/bo/account/details">Cancel</a></p>
+                        <!--<button class="back-link" onclick="enrollment.action.goBack('', '')">Cancel</button>-->
+                    </form>
+                </div>
+            </div>
+		</main>
+  <page-footer></page-footer>
+
+</div>

@@ -13,7 +13,7 @@
     <!--css-->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css">
 
-    <link href="https://rnetwork.s3-us-west-1.amazonaws.com/css/c/imports.css" rel="stylesheet" type="text/css">
+    <link href="https://rnetwork.s3-us-west-1.amazonaws.com/css/a/imports.css" rel="stylesheet" type="text/css">
 
     <!--favicon-->
     <link href="https://rnetworkwebimages.s3-us-west-1.amazonaws.com/favicon-rnetwork.ico" rel="icon" type="x-icon" />
@@ -21,67 +21,166 @@
     <!--cookie compliance-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
 </head>
 
 <body class="site">
 
   <div id="app">
+    <old-header></old-header>
 
-    <!--main-container-->
-    <!---------------------------------------------------------------------->
-    <main class="site-content">
-        <!--hero-->
-        <div id="hero-bg" class="hero overlay-dark">
-            <div class="title color-white">
-                <h1>Our Vision</h1>
-                <span class="post-title">A revolutionary financial movement that is shifting the power and profits from big business to the individual.  Through the power of the network we are able to leverage exclusive savings and drive greater income for all who wish to participate.</span>
+        <!--main-wrapper-->
+  			<div id="main-wrapper" class="clear-top-margin">
+  				<!--account details wrapper-->
+  				<div class="account-block padding-all box">
+  					<h1>Account Details</h1>
+  					<p>Click the edit icon to make changes.</p>
 
-                <!--button-->
-                <div class="button center-button"><a href="/onboarding/routes">Join Now</a></div>
-            </div>
+  					<!--non-editable-->
+  					<div id="account-noneditable" class="account-segment box slide-in-bottom-1">
+  						<ul class="flex-spacebetween">
+  							<!--member ID-->
+  							<li>
+  								<span class="account-label">Member ID</span>
+  								12345678
+  							</li>
 
-            <!--next-->
-            <a class="scroll-to-hash" href="#welcome"><i class="fas fa-chevron-down next heartbeat"></i></a>
-        </div>
+  							<!--member type, i.e. Charter Member, Fann, Marketing Specialist, Financial Specialist, Admin, Super User-->
+  							<li>
+  								<span class="account-label">Member Type</span>
+  								Charter Member
+  							</li>
 
-        <!--welcome-->
-        <div id="welcome" class="welcome-wrapper hero overlay-dark">
-            <div class="welcome-title box">
-                <h2>The Power Is In The Network!</h2>
-                <p>Welcome to <span class="company-name"></span>, a place where the power is shifted back to the individual, where money traditionally captured by big businesses and banks is now being enjoyed by members just like YOU.</p>
-            </div>
-        </div>
+  							<!--status - i.e. Active, Inactive, Onhold, Cancelled, Terminated-->
+  							<li>
+  								<span class="account-label">Status</span>
+  								Active
+  							</li>
 
-        <!--video promo-->
-        <div id="video-bg" class="video-wrapper hero">
-            <!--video-->
-            <div class="media-video">
-                <h2 class="center-text">Discover Your Earning Potential</h2>
+  							<!--tier - CM only-->
+  							<li>
+  								<span class="account-label">Tier</span>
+  								3
+  							</li>
 
-                <!--video placeholder-->
-                <div class="youtube-link">
-                    <a class="video" video-url="https://vimeo.com/374229123/934d8a7cfd"><img src="https://rnetworkwebimages.s3-us-west-1.amazonaws.com/opp_video.jpg" alt="opportunity video"></a>
-                </div>
+  							<!--enroller ID-->
+  							<li>
+  								<span class="account-label">Enroller ID</span>
+  								12345678
+  							</li>
 
-                <!--buttons-->
-                <div class="twobutton_wrapper flex-center box">
-                    <div class="button center-button"><a href="/onboarding?route=CharterMember">Join Now</a></div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!---------------------------------------------------------------------->
+  							<!--enroller's name-->
+  							<li>
+  								<span class="account-label">Enroller&#8217;s Name</span>
+  								John Doe
+  							</li>
+
+  							<!--country of residence-->
+  							<li>
+  								<span class="account-label">Country of Residence</span>
+  								United States
+  							</li>
+  						</ul>
+  					</div>
+
+  					<!--editable-->
+  					<div id="account-editable" class="slide-in-bottom-2">
+  						<ul class="flex-spacebetween dont-break-out">
+  							<!--name-->
+  							<li class="relative account-segment">
+  								<span class="account-label">Name</span>
+  								Jane Doe
+
+  								<!--edit-->
+  								<a href="/2020v1/bo/account/name"><div class="account-edit" title="Edit Info"></div></a>
+  							</li>
+
+  							<!--Email-->
+  							<li class="relative account-segment">
+  								<span class="account-label">Email</span>
+  								janedoeverylongemail1234567veryverlong@gmail.com
+
+  								<!--edit-->
+  								<a href="/2020v1/bo/account/email"><div class="account-edit" title="Edit Info"></div></a>
+  							</li>
+
+  							<!--phone-->
+  							<li class="relative account-segment">
+  								<span class="account-label">Phone</span>
+  								801-123-4567
+
+  								<!--edit-->
+  								<a href="/2020v1/bo/account/phone"><div class="account-edit" title="Edit Info"></div></a>
+  							</li>
+
+  							<!--address-->
+  							<li class="relative account-segment">
+  								<span class="account-label">Address</span>
+  								123 Street Name, City, State 12345
+
+  								<!--edit-->
+  								<a href="/2020v1/bo/account/address"><div class="account-edit" title="Edit Info"></div></a>
+  							</li>
+
+  							<!--birthdate-->
+  							<li class="relative account-segment">
+  								<span class="account-label">Date of Birth</span>
+  								10 Month, 2012
+
+  								<!--edit-->
+  								<a href="/2020v1/bo/account/birthdate"><div class="account-edit" title="Edit Info"></div></a>
+  							</li>
+
+  							<!--gov. ID-->
+  							<li class="relative account-segment">
+  								<span class="account-label">Government-Issued ID</span>
+  								********1234
+
+  								<!--edit-->
+  								<a href="/2020v1/bo/account/govid"><div class="account-edit" title="Edit Info"></div></a>
+  							</li>
+
+  							<!--business name, ID-->
+  							<li class="relative account-segment">
+  								<span class="account-label">Company Name & Business ID</span>
+  								Money, LLC (********123)
+
+  								<!--edit-->
+  								<a href="/2020v1/bo/account/businessinfo"><div class="account-edit" title="Edit Info"></div></a>
+  							</li>
+
+  							<!--password-->
+  							<li class="relative account-segment">
+  								<span class="account-label">Password</span>
+  								**********
+
+  								<!--edit-->
+  								<a href="/2020v1/bo/account/password"><div class="account-edit" title="Edit Info"></div></a>
+  							</li>
+
+  							<!--pay with commission-->
+  							<li class="relative account-segment">
+  								<span class="account-label">Pay with Commission</span>
+  								Disabled
+
+  								<!--edit-->
+  								<a href="/2020v1/bo/account/paywithcomm"><div class="account-edit" title="Edit Info"></div></a>
+  							</li>
+  						</ul>
+
+  						<!--return-->
+  						<p class="account-return link-underscore-blue right-text"><a href="/portal_dashboard.html">Return to dashboard &#62;</a></p>
+  					</div>
+  				</div>
+  			</div>
+  			<!---------------------------------------------------------------------------------------------->
+
+    <old-footer></old-footer>
 
   </div>
 
 
-
-    <script src="/js/site.min.js"></script>
-
-    <script src="/js/video.popup.js"></script>
-
-    <script src="../../js/oldfo/index.js">
-
-    </script>
+    <script src="../../js/bo/am/index.js"></script>
 </body>
 </html>

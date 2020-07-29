@@ -1,0 +1,55 @@
+<div id="app">
+  <page-header></page-header>
+
+  <!---main--->
+		<!---------------------------------------------------------------------------------------------->
+		<main class="site-content">
+			<!--main-wrapper-->
+			<div id="main-wrapper" class="clear-top-margin">
+				<!--account details wrapper-->
+				<div class="account-block padding-all box">
+					<h1>Business Information</h1>
+					<p>Edit your info below, and click save to complete.</p>
+
+          <div class="account-loader fade-in">
+              <div class="account-loader-icon-box">
+                           <div class="account-loader-icon rotate-center"></div>
+                            <p>Processing&#8230;</p>
+              </div>
+          </div>
+
+					<!--form-->
+					<form class="box">
+            <!--error message-->
+            <div v-if="modelState['error'] != undefined" class="box-highlight box relative">
+                <h4>Error</h4>
+                <p>{{ modelState.error }}</p>
+            </div>
+						<div class="form-column-2 flex-spacebetween">
+							<div class="form-group">
+                                <label>Business Name</label>
+                                <input type="text" v-model="company">
+                                <div class="required-temp box" v-if="modelState['Company'] !== undefined">{{ modelState.Company }}</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Business ID</label>
+                                <input type="text" v-model="businessID">
+                                <div class="required-temp box" v-if="modelState['BusinessGovernmentID'] !== undefined">{{ modelState.BusinessGovernmentID }}</div>
+                            </div>
+						</div>
+
+						<!--submit-->
+                        <button type="button" class="submit-button" v-on:click="submit">Save</button>
+
+						<!--reroute link back to details-->
+                        <p class="account-return link-underscore-blue"><a href="/r/bo/account/details">Cancel</a></p>
+						<!--<button class="back-link" onclick="enrollment.action.goBack('', '')">Cancel</button>-->
+					</form>
+				</div>
+			</div>
+			<!---------------------------------------------------------------------------------------------->
+		</main>
+  <page-footer></page-footer>
+
+</div>

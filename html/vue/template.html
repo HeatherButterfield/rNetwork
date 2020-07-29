@@ -21,7 +21,151 @@
     <back-office-panel></back-office-panel>
     <login-panel></login-panel>
 
-  	
+    <!--main-wrapper-->
+			<div id="main-wrapper" class="clear-top-margin">
+				<!--account details wrapper-->
+				<div class="account-block padding-all box">
+					<h1>Account Details</h1>
+					<p>Click the edit icon to make changes.</p>
+
+					<!--non-editable-->
+					<div id="account-noneditable" class="account-segment box slide-in-bottom-1">
+						<ul class="flex-spacebetween">
+							<!--member ID-->
+							<li>
+								<span class="account-label">Member ID</span>
+								12345678
+							</li>
+
+							<!--member type, i.e. Charter Member, Fann, Marketing Specialist, Financial Specialist, Admin, Super User-->
+							<li>
+								<span class="account-label">Member Type</span>
+								Charter Member
+							</li>
+
+							<!--status - i.e. Active, Inactive, Onhold, Cancelled, Terminated-->
+							<li>
+								<span class="account-label">Status</span>
+								Active
+							</li>
+
+							<!--tier - CM only-->
+							<li>
+								<span class="account-label">Tier</span>
+								3
+							</li>
+
+							<!--enroller ID-->
+							<li>
+								<span class="account-label">Enroller ID</span>
+								12345678
+							</li>
+
+							<!--enroller's name-->
+							<li>
+								<span class="account-label">Enroller&#8217;s Name</span>
+								John Doe
+							</li>
+
+							<!--country of residence-->
+							<li>
+								<span class="account-label">Country of Residence</span>
+								United States
+							</li>
+						</ul>
+					</div>
+
+					<!--editable-->
+					<div id="account-editable" class="slide-in-bottom-2">
+						<ul class="flex-spacebetween dont-break-out">
+							<!--name-->
+							<li class="relative account-segment">
+								<span class="account-label">Name</span>
+								Jane Doe
+
+								<!--edit-->
+								<a href="/2020v1/bo/account/name"><div class="account-edit" title="Edit Info"></div></a>
+							</li>
+
+							<!--Email-->
+							<li class="relative account-segment">
+								<span class="account-label">Email</span>
+								janedoeverylongemail1234567veryverlong@gmail.com
+
+								<!--edit-->
+								<a href="/2020v1/bo/account/email"><div class="account-edit" title="Edit Info"></div></a>
+							</li>
+
+							<!--phone-->
+							<li class="relative account-segment">
+								<span class="account-label">Phone</span>
+								801-123-4567
+
+								<!--edit-->
+								<a href="/2020v1/bo/account/phone"><div class="account-edit" title="Edit Info"></div></a>
+							</li>
+
+							<!--address-->
+							<li class="relative account-segment">
+								<span class="account-label">Address</span>
+								123 Street Name, City, State 12345
+
+								<!--edit-->
+								<a href="/2020v1/bo/account/address"><div class="account-edit" title="Edit Info"></div></a>
+							</li>
+
+							<!--birthdate-->
+							<li class="relative account-segment">
+								<span class="account-label">Date of Birth</span>
+								10 Month, 2012
+
+								<!--edit-->
+								<a href="/2020v1/bo/account/birthdate"><div class="account-edit" title="Edit Info"></div></a>
+							</li>
+
+							<!--gov. ID-->
+							<li class="relative account-segment">
+								<span class="account-label">Government-Issued ID</span>
+								********1234
+
+								<!--edit-->
+								<a href="/2020v1/bo/account/govid"><div class="account-edit" title="Edit Info"></div></a>
+							</li>
+
+							<!--business name, ID-->
+							<li class="relative account-segment">
+								<span class="account-label">Company Name & Business ID</span>
+								Money, LLC (********123)
+
+								<!--edit-->
+								<a href="/2020v1/bo/account/businessinfo"><div class="account-edit" title="Edit Info"></div></a>
+							</li>
+
+							<!--password-->
+							<li class="relative account-segment">
+								<span class="account-label">Password</span>
+								**********
+
+								<!--edit-->
+								<a href="/2020v1/bo/account/password"><div class="account-edit" title="Edit Info"></div></a>
+							</li>
+
+							<!--pay with commission-->
+							<li class="relative account-segment">
+								<span class="account-label">Pay with Commission</span>
+								Disabled
+
+								<!--edit-->
+								<a href="/2020v1/bo/account/paywithcomm"><div class="account-edit" title="Edit Info"></div></a>
+							</li>
+						</ul>
+
+						<!--return-->
+						<p class="account-return link-underscore-blue right-text"><a href="/portal_dashboard.html">Return to dashboard &#62;</a></p>
+					</div>
+				</div>
+			</div>
+			<!---------------------------------------------------------------------------------------------->
 
 
     <page-footer></page-footer>

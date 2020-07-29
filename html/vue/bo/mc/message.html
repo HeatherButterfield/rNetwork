@@ -1,0 +1,27 @@
+<div id="app">
+  <!---main--->
+		<!---------------------------------------------------------------------------------------------->
+		<main>
+			<!--main-wrapper-->
+			<div id="account-message-contentpage" class="account-block box">
+				<!--message body-->
+                <div id="account-message-wrapper">
+                    <!--message-->
+                    <div id="message-1" class="account-message">
+                        <!--message body-->
+                        <section>
+                            <!--message body-->
+                            <article class="message-body relative box box-shadow-3">
+                                <!--close icon-->
+                                <a class="close-button" :href="'/r/bo/account/messages/' + status + '?skip=' + skip + '&take=' + take">&#10005;</a>
+
+                                <!--html email content (table) via variable-->
+                                <div v-html="message"></div>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+			</div>
+			<!---------------------------------------------------------------------------------------------->
+		</main>
+</div>

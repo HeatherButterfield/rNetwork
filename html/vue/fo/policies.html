@@ -1,0 +1,8 @@
+<div id="app">
+  <page-header></page-header>
+
+  <policies-page></policies-page>
+
+  <india-footer v-if="getCookie('_CountryID') === 'IN'"></india-footer>
+  <page-footer v-else></page-footer>
+</div>
