@@ -6,54 +6,43 @@
 
 			<!--main-wrapper-->
 			<div id="main-wrapper" class="clear-top-margin">
-				<!--hero-->
-				<div class="flex-spacebetween flex-align-center block-hero padding-all box">
-					<!--graphic-->
-					<div id="content-bg-33" class="graphic-box fifty-split"></div>
+				<!--heading block-->
+                <div class="padding-sides box block-resize-narrw center-text">
+                    <h1 class="padding-header box">Two Ways to Join</h1>
+                    <p class="subhead">There are two ways to enjoy the benefits of rNetwork. Each offer unique opportunities to become part of our growing community.</p>
+                </div>
 
-					<!--content-->
-					<div class="fifty-split padding-sides box">
-						<h1>Two Ways to Join</h1>
-						<p class="subhead">There are two ways to enjoy the benefits of rNetwork. Each offer unique opportunities to become part of our growing community.</p>
+								<!--content block-->
+								<div class="flex-center card-box padding-all box">
+									<figure>
+										<!--graphic-->
+										<div id="content-bg-31" class="img"></div>
 
-						<!--cta-->
-                        <div class="cta-button"><a href="/onboarding?route=CharterMember">Join Now</a></div>
-					</div>
-				</div>
+										<!--content-->
+										<figcaption>
+											<h4>Become a Charter Member</h4>
+											<p>If you are ready to join a community of like-minded people and participate in amazing opportunity, while benefiting from our full suite of products, become a Charter Member today.</p>
+											<p class="post-script"><strong>IMPORTANT! To become a Charter Member in India, the process begins with your Free FANN Membership enrollment, then continues into your Charter Member enrollment.</strong></p>
 
-				<!--content block-->
-				<div class="flex-center card-box padding-all box">
-					<figure>
-						<!--graphic-->
-						<div id="content-bg-31" class="img"></div>
+											<!--cta-->
+											<div class="cta-button"><a href="/onboarding?route=CharterMember">Join Now</a></div>
+										</figcaption>
+									</figure>
 
-						<!--content-->
-						<figcaption>
-							<h4>Become a Charter Member</h4>
-							<p>If you are ready to make life-changing money with an amazing opportunity, while benefiting from our full suite of savings, CHARTER MEMBER is the choice for you.</p>
-							<p>Begin your personal financial revolution now!</p>
-							<p class="post-script"><strong>IMPORTANT! To become a Charter Member in India, the process begins with your Free FANN Membership enrollment, then continues into your Charter Member enrollment.</strong></p>
+									<figure>
+										<!--graphic-->
+										<div id="content-bg-32" class="img"></div>
 
-							<!--cta-->
-							<div class="cta-button"><a href="/onboarding?route=CharterMember">Join Now</a></div>
-						</figcaption>
-					</figure>
+										<!--content-->
+										<figcaption>
+											<h4>Join As FANN</h4>
+											<p>If you are looking to simply become a customer of rNetwork, save money on some of life’s largest purchase decisions and experience some of the benefits of the network, the no-cost FANN option is the choice for you.</p>
 
-					<figure>
-						<!--graphic-->
-						<div id="content-bg-32" class="img"></div>
-
-						<!--content-->
-						<figcaption>
-							<h4>Join As FANN</h4>
-							<p>If you are looking to save money on some of life’s largest purchase decisions and experience some of the benefits of the network, the no-cost FANN option is the choice for you.</p>
-							<p>Whichever path you choose, we formally welcome you to rNetwork’s personal financial revolution! Start saving now!</p>
-
-							<!--cta-->
-							<div class="cta-button"><a href="/onboarding?route=Fann">Join Now</a></div>
-						</figcaption>
-					</figure>
-				</div>
+											<!--cta-->
+											<div class="cta-button"><a href="/onboarding?route=Fann">Join Now</a></div>
+										</figcaption>
+									</figure>
+								</div>
 			</div>
 			<!---------------------------------------------------------------------------------------------->
 		</main>

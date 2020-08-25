@@ -7,7 +7,7 @@
 			<!--main-wrapper-->
 			<div id="main-wrapper">
 				<!--hero-->
-				<div class="block-hero clear-top-margin flex-spacebetween-reverse flex-align-center block-text-color-1">
+				<div class="block-hero clear-top-margin flex-spacebetween-reverse block-text-color-1">
 					<!--graphic block-->
 					<div id="content-bg-24" class="three-fourth-split graphic-box-split-full"></div>
 
@@ -47,8 +47,8 @@
 
                     <!--text block-->
                     <div class="one-fourth-split padding-all box">
-                        <h2>Welcome to Global Mall</h2>
-                        <p>Earn exclusive cashback and commissions when you shop with our retail partners through rGlobal Mall. Best of all, this is in addition to any of our on-site deals and discounts. By partnering with top brands, such as Nike, Overstock.com, and Elizabeth Arden to name a few, our goal is to provide our Charter Members and FANNS with a wide selection of brands and products to shop from. The bigger we get, the better it gets!</p>
+                        <h2>Welcome to rNetwork Partner Brands</h2>
+                        <p>Earn exclusive cashback and commissions when you shop with our retail partners through rNetwork Partner Brands. Best of all, this is in addition to any of our on-site deals and discounts. By partnering with top brands, such as Nike, Overstock.com, and Elizabeth Arden to name a few, our goal is to provide our Charter Members and FANNS with a wide selection of brands and products to shop from. The bigger we get, the better it gets!</p>
 
 						<!--cta-->
                         <div class="cta-button-xl"><a class="video" video-url="https://vimeo.com/398043342/c1fbe8ec64">Play Presentation</a></div>
@@ -56,7 +56,7 @@
 				</div>
 
 				<!--content block-->
-				<div v-if="false" class="padding-all box">
+				<div class="padding-all box">
 					<div class="center-text block-resize">
                         <h2>Products & Services</h2>
                         <p>Our Product Suite is just the beginning of what will soon be the largest savings and earning platform in the world!</p>
@@ -71,7 +71,8 @@
 							<figcaption>
 								<h4>rTravel Club</h4>
 								<p>Our exclusive full travel suite and booking portal. True wholesale rates not available to the general public. You have access to exclusive savings on Hotels, Cruises, Resorts, Airfare, Car Rental, and exclusive vacation packages throughout the world. You will also get access to Concerts, Sporting Events, and Shows. If it involves Travel and Fun you can find it here.</p>
-								<p class="link-underscore-blue"><a href="https://rnetwork.imfast.io/production/downloads/rNetwork-rTravel.pdf" target="_blank">Download the brochure &#62;</a></p>
+
+								<p class="link-underscore-blue"><a href="https://rnetwork.imfast.io/static/downloads/rNetwork-rTravel.pdf" target="_blank">Download the brochure &#62;</a></p>
 
 								<!--cta-->
 								<div class="cta-button"><a class="video" video-url="https://vimeo.com/374260661" title="Watch the video presentation.">Learn More</a></div>
@@ -83,11 +84,12 @@
 
 							<figcaption>
 								<h4>TV.Fit</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eum repudiandae, deleniti sequi. Aspernatur accusantium delectus, ab veniam iusto facilis harum sequi quae laborum sed quia laboriosam quisquam, numquam obcaecati.</p>
-								<p class="link-underscore-blue"><a href="https://rnetwork.imfast.io/production/downloads/rNetwork-rNetwork-TVFit.pdf" target="_blank">Download the brochure &#62;</a></p>
+								<p>rNetwork has established a premier partnership with TV.FIT the global leader in fitness. This amazing value is included in all Charter Member monthly product purchased packages. FANN’s of rNetwork can also get 20% discount off the TV.FIT retail price offered globally. Remember, fitness is both physical and mental. </p>
+
+								<p class="link-underscore-blue"><a href="https://rnetwork.imfast.io/static/downloads/rNetwork-TVFit.pdf" target="_blank">Download the brochure &#62;</a></p>
 
 								<!--cta-->
-								<div class="cta-button"><a class="video" video-url="#" title="Watch the video presentation.">Learn More</a></div>
+								<div class="cta-button"><a class="video" video-url="https://vimeo.com/440119289/eeb2939766" title="Watch the video presentation.">Learn More</a></div>
 							</figcaption>
 						</figure>
 					</div>
@@ -113,7 +115,7 @@
 							</article>
 
                             <!--cta-->
-                            <div class="cta-button-xl"><a href="https://rnetwork.imfast.io/production/downloads/rNetwork-rHomeHealth.pdf" target="_blank">Learn More</a></div>
+                            <div class="cta-button-xl"><a href="https://rnetwork.imfast.io/static/downloads/rNetwork-rHomeHealth.pdf" target="_blank">Learn More</a></div>
                         </div>
 					</div>
 				</div>

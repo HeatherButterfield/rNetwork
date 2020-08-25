@@ -9,8 +9,8 @@
 				<!--content block-->
 				<div id="policies-wrapper" class="clear-top-margin">
 					<article class="padding-all box block-resize word-break link-underscore-blue">
-						<h1>Policies & Procedures</h1>
-						<h2 class="accent-color">Terms and Conditions</h2>
+						<h1>Terms and Conditions</h1>
+						<h2 class="accent-color">Policies & Procedures</h2>
 						<p class="post-script">(v20200629.1.1)</p>
 
 						<h4>SECTION 1 – PURPOSES OF POLICIES AND PROCEDURES</h4>

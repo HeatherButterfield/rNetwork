@@ -4,6 +4,20 @@
   <!---main--->
 		<!---------------------------------------------------------------------------------------------->
 		<main class="site-content">
+			<!--google translate - zindex 80-->
+            <div id="translate-wrapper">
+                <div id="translate-block">
+                    <div id="google_translate_element"></div>
+
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                        }
+                    </script>
+
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                </div>
+            </div>
 
 			<!--main-wrapper-->
 			<div id="main-wrapper">
@@ -12,13 +26,16 @@
 					<article class="padding-all box block-resize word-break link-underscore-blue">
 						<h1>Policies & Procedures</h1>
 						<h2 class="accent-color">Privacy Policy</h2>
-						<p class="post-script">(v20200710.1.1)</p>
+						<p class="post-script">(v20200803.1.1)</p>
 
-						<p>Thank you for visiting <a href="https://rnetworkglobal.in/" target="_blank">https://rnetworkglobal.in/</a>. As used in this privacy statement, the terms “our”, ”we” and “us” refer to both rNetwork and the Charter Member unless the context provides otherwise.</p>
-						<p>This privacy policy sets out how rNetwork India Pvt. Ltd. uses and protects any information that you give us when you use this website. rNetwork is committed to ensuring that your privacy is always protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement.</p>
+						<p>This privacy policy is an electronic record in the form of electronic contract formed under the Information Technology Act 2000 and the rules made there under and the amended provisions pertaining to electronic documents / records in various statutes as amended by the Information Technology Act, 2000. This privacy policy does not require any physical, electronic or digital signature.</p>
+						<p>This privacy policy is a legally binding document between you and the company. The terms of this privacy policy will be effective upon your acceptance of the same (directly or indirectly in electronic form) and will govern the relationship between you and rNetwork India Private Limited for your use of website <a href="https://rnetworkglobal.in/" target="_blank">https://rnetworkglobal.in</a></p>
+						<p>This document is published and shall be construed in accordance with the provisions of the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data of Information) Rules, 2011 under Information Technology Act, 2000 that require publishing of the privacy policy for collection, use storage and transfer of sensitive personal data or information.</p>
+						<p>Please read this privacy policy carefully. By using the website, you indicate that you understand, agree and consent to this privacy policy. If you do not agree with the terms of this privacy policy, please do not use this website. You hereby provide your unconditional consent or agreements to the company as provided under section 43A and section 72A of Information Technology Act, 2000.</p>
+						<p>Thank you for visiting <a href="https://rnetworkglobal.in/" target="_blank">https://rnetworkglobal.in.</a> As used in this privacy statement, the terms “our”, ”we” and “us” refer to both rNetwork and the Charter Member unless the context provides otherwise. This privacy policy sets out how rNetwork India Pvt. Ltd. uses and protects any information that you give us when you use this website. rNetwork is committed to ensuring that your privacy is always protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement.</p>
 
 						<h4>What Information We Collect and How We Use It</h4>
-						<p>The information that we collect on our website comes under two general categories</p>
+						<p>The information that we collect on our website comes under two general categories:</p>
 						<ol>
 							<li>Personally Identifiable Information</li>
 							<li>Aggregate Information</li>
@@ -43,7 +60,7 @@
 									</li>
 									<li>
 										<p><strong>Surveys and Promotions</strong></p>
-										<p>You may voluntarily provide Personally Identifiable Information to participate in occasional surveys, user polls or to answer questionnaires. This information is used by us to better our products and services. We may also use this information to provide you marketing and promotional material. If you do not wish to receive any such material, you can adjust the setting for the same through a link provided in the email communication or send us an email at support@rnetworkglobal.in.</p>
+										<p>You may voluntarily provide Personally Identifiable Information to participate in occasional surveys, user polls or to answer questionnaires. This information is used by us to better our products and services. We may also use this information to provide you marketing and promotional material. If you do not wish to receive any such material, you can adjust the setting for the same through a link provided in the email communication or send us an email at <a href="mailto:support@rnetworkglobal.in" target="_blank">support@rnetworkglobal.in.</a></p>
 									</li>
 								</ol>
 							</li>
@@ -74,14 +91,13 @@
 						<h4>Controlling your Personally Identifiable Information</h4>
 						<p>We try our best to ensure that the Personally Identifiable Information we collect on our site is current, accurate and complete. You may choose to restrict the collection or use of your Personally Identifiable Information in the following ways:</p>
 						<p><strong>Intellectual Property and Use of content on the rNetwork Website</strong></p>
-						<p>The rNetwork Website (https://rnetworkglobal.in/) and the content on the same are protected by intellectual property rights, including copyrights, trade names and trademarks, including the name ‘rNetwork’ and the rNetwork logo, and are owned by rNetwork India Private Limited (“rNetwork”) or used by rNetwork under a license or with permission from the owner of such rights. The content protected by such intellectual property rights includes the design, layout, look, appearance, visuals, photographs, images, articles, stories and other content on the rNetwork Website.</p>
-						<p>The content on the rNetwork website may only be reproduced, distributed, published or otherwise used only after prior written consent of rNetwork.</p>
+						<p>The rNetwork Website (https://rnetworkglobal.in/) and the content on the same are protected by intellectual property rights, including copyrights, trade names and trademarks, including the name ‘rNetwork’ and the rNetwork logo, and are owned by rNetwork India Private Limited (“rNetwork”) or used by rNetwork under a license or with permission from the owner of such rights. The content protected by such intellectual property rights includes the design, layout, look, appearance, visuals, photographs, images, articles, stories and other content on the rNetwork Website.
+                        The content on the rNetwork website may only be reproduced, distributed, published or otherwise used only after prior written consent of rNetwork.</p>
 					</article>
 				</div>
 			</div>
 			<!---------------------------------------------------------------------------------------------->
 		</main>
-
 
   <india-footer v-if="getCookie('_CountryID') === 'IN'"></india-footer>
   <page-footer v-else></page-footer>

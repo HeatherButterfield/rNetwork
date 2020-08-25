@@ -24,7 +24,7 @@
           <li><a href="/r/home">Home</a></li>
           <li v-if="getCookie('_Alias')"><a href="/r/opportunity">Opportunity</a></li>
           <li><a href="/r/products">Products & Services</a></li>
-          <li><a href="https://rnetwork.imfast.io/production/downloads/rNetwork-Executive-Team.pdf" target="_blank">Corporate</a></li>
+          <li><a href="https://rnetwork.imfast.io/static/downloads/rNetwork-Executive-Team.pdf" target="_blank">Corporate</a></li>
                   </ul>
 
                   <ul>
@@ -53,11 +53,11 @@
                                   <!--address-->
                                   <h5>Company Info</h5>
           						<!--flag-->
-                                  <div><img src="https://rnetwork.imfast.io/production/images/flags/in.svg" alt="India Flag - rNetwork"/></div>
+                                  <div><img src="https://rnetwork.imfast.io/static/images/flags/in.svg" alt="India Flag - rNetwork"/></div>
 
           						<p>Flat no. C4-1101<br>The Legend, Sushant Lok,<br>Phase - 3, Sector - 57,<br>Gurugram - 122002<br><a href="mailto:support@rnetworkglobal.in">support@rnetworkglobal.in</a></p>
-                                  <p><strong>Grievance Redressal</strong><br>1-800-889-1716</p>
-          						<p><strong>Customer Support</strong><br>1-800-889-1716</p>
+                                  <p><strong>Grievance Redressal</strong><br>TBA</p>
+          						<p><strong>Customer Support</strong><br>TBA</p>
           					</div>
               </div>
 
@@ -65,10 +65,10 @@
               <div class="footer-block-3">
                   <!--social media-->
                   <div class="flex-center hover-lift">
-          <span class="social-icons"><a href="https://www.facebook.com/rnetworkcorp/" target="_blank"><img src="https://rnetwork.imfast.io/production/images/fb.png" alt="facebook"/></a></span>
-                      <span class="social-icons"><a href="https://twitter.com/comms_r" target="_blank"><img src="https://rnetwork.imfast.io/production/images/tw.png" alt="twitter"/></a></span>
-                      <span class="social-icons"><a href="https://www.instagram.com/rnetworkcorporate/" target="_blank"><img src="https://rnetwork.imfast.io/production/images/ig.png" alt="instagram"/></a></span>
-                      <!--<span class="social-icons"><a href="#" target="_blank"><img src="https://rnetwork.imfast.io/production/images/yt.png" alt="youtube"/></a></span>-->
+          <span class="social-icons"><a href="https://www.facebook.com/rnetworkcorp/" target="_blank"><img src="https://rnetwork.imfast.io/static/images/fb.png" alt="facebook"/></a></span>
+                      <span class="social-icons"><a href="https://twitter.com/comms_r" target="_blank"><img src="https://rnetwork.imfast.io/static/images/tw.png" alt="twitter"/></a></span>
+                      <span class="social-icons"><a href="https://www.instagram.com/rnetworkcorporate/" target="_blank"><img src="https://rnetwork.imfast.io/static/images/ig.png" alt="instagram"/></a></span>
+                      <!--<span class="social-icons"><a href="#" target="_blank"><img src="https://rnetwork.imfast.io/static/images/yt.png" alt="youtube"/></a></span>-->
                   </div>
 
                   <div class="center-text copyright-text">

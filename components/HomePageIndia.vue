@@ -18,33 +18,42 @@
                     </div>
                 </div>
 
-                <!--content block-->
+								<!--content block-->
                 <div class="box padding-all center-text block-statement">
                     <h2>Our Vision</h2>
-                    <p class="subhead">A revolutionary financial movement that is shifting the power and profits from big business to the individual. Through the power of the network we are able to leverage exclusive savings and drive greater income for all who wish to participate.</p>
+                    <p class="subhead">rNetwork is empowering a community that is shifting the power and profits to the individual resulting in a better quality of life for all who wish to participate.</p>
                 </div>
 
-                <!--content block-->
+								<!--full bg content block-->
+                <div id="full-bg-3" class="block-full-bg relative overlay-dark">
+                    <!--content-->
+                    <div class="text-block-fullbg font-light padding-sides box">
+                        <h2>The power is in the network.</h2>
+                        <p class="subhead">Welcome to rNetwork, a place where the power is shifted back to the individual, where money traditionally captured by big businesses and banks is now being enjoyed by members just like YOU.</p>
+
+						<!--cta-->
+                        <div class="cta-button"><a href="/r/opportunity">Learn More</a></div>
+                    </div>
+                </div>
+
+								<!--content block-->
                 <div class="padding-all flex-spacebetween flex-align-center block-resize">
                     <!--img block-->
                     <div id="content-bg-1" class="graphic-box fifty-split"></div>
 
                     <!--content-->
                     <div class="padding-sides block-border fifty-split box">
-                        <h2>The power is in the network.</h2>
-                        <p>Welcome to rNetwork, a place where the power is shifted back to the individual, where money traditionally captured by big businesses and banks is now being enjoyed by members just like YOU.</p>
-
-                        <!--cta-->
-                        <div v-if="getCookie('_Alias')" class="cta-button"><a href="/r/opportunity">Learn More</a></div>
+                        <h2>Our Mission</h2>
+                        <p>Through the World's first Participation Marketplace&reg;, ensure our members achieve increased financial freedom, health, wellness, quality of life, and personal success.</p>
                     </div>
                 </div>
 
-                <!--full bg content block-->
-                <div id="full-bg-1" class="block-full-bg relative">
+								<!--full bg content block-->
+                <div id="full-bg-1" class="block-full-bg relative overlay-dark">
                     <!--content-->
                     <div class="text-block-fullbg font-light padding-sides box">
                         <h2>One for all, and all for one—building a network that keeps you winning.</h2>
-                        <p>Never forget, alone we are powerless, but as a group, we can change the world.</p>
+                        <p class="subhead">Never forget, alone we are powerless, but as a group, we can change the world.</p>
 
                         <!--cta-->
                         <div class="cta-button-xl"><a class="video" video-url="https://youtu.be/fGyLkPx5t2k">Watch Presentation</a></div>

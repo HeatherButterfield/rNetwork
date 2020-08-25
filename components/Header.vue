@@ -4,14 +4,14 @@
   <!---------------------------------------------------------------------------------------------->
   <header class="flex-align-center box">
     <!--trifold-->
-    <div id="trifold" class="nav-icon"><a href="#nav-menu"><img src="https://rnetwork.imfast.io/production/images/trifold_4x.png" alt="trifold menu"/></a></div>
+    <div id="trifold" class="nav-icon"><a href="#nav-menu"><img src="https://rnetwork.imfast.io/static/images/trifold_4x.png" alt="trifold menu"/></a></div>
 
     <!--navigation-->
     <nav>
       <!--mobile menu - zindex 200-->
       <div id="nav-menu" class="box hover-underscore">
         <!--close button-->
-        <div id="close-nav-menu"><a href="#"><img src="https://rnetwork.imfast.io/production/images/close-panel-rnetwork.png" alt="close"/></a></div>
+        <div id="close-nav-menu"><a href="#"><img src="https://rnetwork.imfast.io/static/images/close-panel-rnetwork.png" alt="close"/></a></div>
 
         <!--menu - getting started-->
         <ul id="nav-1">
@@ -25,7 +25,7 @@
 
         <!--menu - additional menu-->
         <ul id="nav-2">
-          <li><a href="https://rnetwork.imfast.io/production/downloads/rNetwork-Executive-Team.pdf" target="_blank">Corporate</a></li>
+          <li><a href="https://rnetwork.imfast.io/static/downloads/rNetwork-Executive-Team.pdf" target="_blank">Corporate</a></li>
           <li><a href="/r/faq">Support</a></li>
           <li><a href="https://rnetwork-news.blogspot.com" target="_blank">News</a></li>
           <li><a href="https://rnetwork.axomo.com" target="_blank">Swag</a></li>
@@ -43,15 +43,15 @@
 
     <!--logo - use country initial to indicate access country-->
     <div class="logo">
-      <a href="/r/home"><img src="https://rnetwork.imfast.io/production/images/logo_rnetwork.png" alt="rNetwork logo"/></a>
+      <a href="/r/home"><img src="https://rnetwork.imfast.io/static/images/logo_rnetwork.png" alt="rNetwork logo"/></a>
 
       <!--flag-->
       <a href="/r/country/select"><span class="country-flag" :class="getCookie('_CountryID')">{{getCookie('_CountryID')}}</span></a>
     </div>
 
     <!--login/logout-->
-    <div v-if="!data.appUserIsSignedIn" id="login" class="nav-icon"><a href="/account/login"><img src="https://rnetwork.imfast.io/production/images/login_4x.png" alt="login" /></a></div>
-    <div v-if="data.appUserIsSignedIn" id="logout" class="nav-icon"><a href="/account/logout"><img src="https://rnetwork.imfast.io/production/images/login_4x.png" alt="logout" /></a></div>
+    <div v-if="!data.appUserIsSignedIn" id="login" class="nav-icon"><a href="/account/login"><img src="https://rnetwork.imfast.io/static/images/login_4x.png" alt="login" /></a></div>
+    <div v-if="data.appUserIsSignedIn" id="logout" class="nav-icon"><a href="/account/logout"><img src="https://rnetwork.imfast.io/static/images/login_4x.png" alt="logout" /></a></div>
   </header>
 
 </template>

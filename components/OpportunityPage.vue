@@ -44,7 +44,7 @@
 
 							<ul>
                                 <li>Take your position in rNetwork’s Charter Member organization (3x10 dynamically compressed team building structure) where you have the ability to earn a significant residual income.</li>
-                                <li>You will enjoy exclusive savings on major items like your next car, home loan and cellular service although rNetwork’s concierge services.</li>
+                                <li>You will enjoy exclusive savings on major items like your next car, home loan and cellular service through rNetwork’s concierge services.</li>
                                 <li>Get exclusive savings on travel, including Hotel, Airfare and Car Rentals, unavailable to the general public, as well as local savings and discounts on Dining, Ski & Golf packages, and Entertainment at over 375,000 local merchants and growing.</li>
                                 <li>Savings on prescriptions for you and your pets.</li>
                                 <li>Business tools, which includes your replicated website and Charter Member and FANN tracking tools.</li>
@@ -78,7 +78,7 @@
                         </article>
 
                         <!--cta-->
-                        <div class="cta-button"><a href="https://rnetwork.imfast.io/production/downloads/rNetwork_comp_plan.pdf" target="_blank">See Comp Plan</a></div>
+                        <div class="cta-button"><a href="https://rnetwork.imfast.io/static/downloads/rNetwork_comp_plan.pdf" target="_blank">See Comp Plan</a></div>
                     </div>
                 </div>
 

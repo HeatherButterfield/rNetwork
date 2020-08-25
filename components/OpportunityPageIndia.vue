@@ -84,7 +84,7 @@
 		                                <li>A Synergistic Team Building Structure (TBS)</li>
 		                            </ul>
 
-																<p class="link-underscore-blue"><a href="https://rnetwork.imfast.io/production/downloads/rNetwork-Power3-Comp-IN.pdf" target="_blank">Download the Comp Plan Brochure &#62;</a></p>
+																<p class="link-underscore-blue"><a href="https://rnetwork.imfast.io/static/downloads/rNetwork-Power3-Comp-IN.pdf" target="_blank">Download the Comp Plan Brochure &#62;</a></p>
 								</article>
 
 		                        <!--cta-->

@@ -12,7 +12,7 @@ new window.Vue({
     cards: [
       {
         link: "http://www.americancrew.com/",
-        img: "https://rnetwork.imfast.io/production/images/shop-americancrew-rnetwork.jpg",
+        img: "https://rnetwork.imfast.io/static/images/shop-americancrew-rnetwork.jpg",
         alt: "american crew - rNetwork",
         caption: "American Crew launched in 1994 and for more than 20 years, we’ve delivered only the best. American Crew is the leading professional men’s grooming brand in the world.",
         tcr: "4.8%"

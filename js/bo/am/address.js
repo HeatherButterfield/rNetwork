@@ -19,7 +19,7 @@ new window.Vue({
     if (!this.data.appUserIsSignedIn) {
       window.location.replace("/account");
     }
-    global.actions.updateCityOptions(this.country, $('[name="state"]'));
+    global.actions.updateCityOptions(this.country, $('[name="state"]'), this.state);
   },
   methods: {
 		processModelState: function(response, vm) {

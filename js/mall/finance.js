@@ -12,7 +12,7 @@ new window.Vue({
     cards: [
       {
         link: "https://turbotax.intuit.com/",
-        img: "https://rnetwork.imfast.io/production/images/shop-turbotax-rnetwork.jpg",
+        img: "https://rnetwork.imfast.io/static/images/shop-turbotax-rnetwork.jpg",
         alt: "Turbo Tax - rNetwork",
         caption: "For over 25 years, TurboTax products have been continuously ranked as the #1 best-selling tax software helping Americans keep more of their hard-earned money.",
         tcr: "4%–12%"

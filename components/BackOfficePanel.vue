@@ -123,8 +123,8 @@
 
             <!--panel 2 menu-->
             <ul class="bo-panel-menu box">
-                <!--Global Mall-->
-                <li><a href="/2020v1/bo/shop/?appuserid=10000000&appusertype=1"><span class="bo-panel-icon"><img src="https://rnetwork.s3-us-west-1.amazonaws.com/images/rShopping-rnetwork.png" alt="Global Mall - rNetwork"/></span><span data-translate="true">Global Mall</span></a></li>
+                <!--rNetwork Partner Brands-->
+                <li><a href="/2020v1/bo/shop/?appuserid=10000000&appusertype=1"><span class="bo-panel-icon"><img src="https://rnetwork.s3-us-west-1.amazonaws.com/images/rShopping-rnetwork.png" alt="rNetwork Partner Brands - rNetwork"/></span><span data-translate="true">rNetwork Partner Brands</span></a></li>
 
                 <!--rTravel-->
                 <li><a href="#"><span class="bo-panel-icon"><img src="https://rnetwork.s3-us-west-1.amazonaws.com/images/rTravel-rnetwork.png" alt="rTravel - rNetwork"/></span><span data-translate="true">rTravel</span></a></li>
